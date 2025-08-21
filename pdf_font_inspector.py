@@ -3,7 +3,7 @@ import fitz
 import os
 
 st.set_page_config(page_title="PDF Font Inspector", layout="wide")
-st.title("PDF Font Inspector")
+st.title("PDF Inspector")
 
 uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
 
@@ -77,4 +77,5 @@ if uploaded_file:
                     )
 
     doc.close()
+
     os.remove(temp_path)
